@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="includes/main.js" async></script>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" href="includes/style.css">
+
+        <title>form</title>
+    </head>
+    <body>
+        <h1>Welcome To The Cutest Forst</h1>
+        <div id="talkbubble"></div>
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get" autocomplete="on" id="frm">
+            <label>Full Name: <input class="form-control" type="text" name="fullName" title="your name must only contain letters"></label>
+            <br><label>Your Password Is: <input class="form-control" type="password" name="pass" maxlength="8" pattern="[0-9]{8}" required ></label>
+            <br><label>Your Email Address Is:<input class="form-control" type="email" name="mail"></label>
+            <br><label>Your Website is: <input class="form-control" type="url" name="website"></label>
+            <br><label>Your Phone Is: <input class="form-control" type="tel" name="phone"></label>
+            <br><label>The Amount of Sun Hours per Day: <input class="form-control" type="number" name="coffee"></label>
+            <br><label>the temperature now is: -20<input type="range" id="temp" name="temper" min="-20" max="40">40</label>
+            <br><label>your address is: <br><textarea id="add" rows="5" cols="50" name="address"></textarea></label>
+            <button type="button" id="button">אמת נתוני כתובת</button>
+            <h3>Your Favorite Place: </h3>
+            <label>the nature<input type="checkbox" name="interests[]" value="nature"></label>
+            <br><label>the sea<input type="checkbox" name="interests[]" value="sea"></label>
+            <br><label>the mall<input type="checkbox" name="interests[]" value="sport"></label>
+            <br><label>your room<input type="checkbox" name="interests[]" value="room"></label>
+            <h2>Which Animal is Cuter: </h2>
+            <label>rabbit <input type ="radio" name="gender" value ="rabbit"></label>
+            <label>koala<input type ="radio" name="gender" value ="koala"></label>
+            <br><label>How Much You Love Animals:
+            <select id="love" class="custom-select" name="age">
+            </select>
+        </label>
+            <br><input type="submit" value="Submit" class="sbm">
+        </form >
+
+        <div id="background-wrap">
+            <div class="x1">
+                <div class="cloud"></div>
+            </div>
+
+            <div class="x2">
+                <div class="cloud"></div>
+            </div>
+
+            <div class="x3">
+                <div class="cloud"></div>
+            </div>
+
+        </div>
+        <!-- TREE: -->
+        <div id="tree">
+            <div id="tree_trunk"></div>
+            <div id="branch_1"></div>
+            <div id="branch_2"></div>
+            <div id="branch_3"></div>
+            <div id="branch_4"></div>
+            <div id="branch_11"></div>
+
+            <div id="treetop_1"></div>
+            <div id="treetop_2"></div>
+            <div id="treetop_3"></div>
+            <div id="treetop_4"></div>
+            <div id="treetop_5"></div>
+            <div id="treetop_6"></div>
+            <div id="treetop_7"></div>
+            <div id="treetop_8"></div>
+        </div>
+        <!-- SKY: -->
+        <div id="sky">
+            <div id="sky_1"></div>
+            <div id="sky_2"></div>
+            <div id="sky_3"></div>
+            <div id="sky_4"></div>
+        </div>
+
+        <div id="cloud">
+            <div id="cloud_1"></div>
+            <div id="cloud_2"></div>
+            <div id="cloud_3"></div>
+            <div id="cloud_4"></div>
+        </div>
+
+        <!-- Rabbit -->
+        <div class="box">
+            <div class="head-rabbit">
+                <div class="ear-left">
+                    <div class="inner-ear"></div>
+                </div>
+                <div class="ear-right">
+                    <div class="inner-ear"></div>
+                </div>
+                <div class="eye-left">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye-right">
+                    <div class="pupil"></div>
+                </div>
+                <div class="nose">
+                    <div class="line"></div>
+                </div>
+                <div class="blush-left"></div>
+                <div class="blush-right"></div>
+                <div class="body"></div>
+                <div class="right-hand"></div>
+                <div class="left-hand"></div>
+                <div class="right-leg"></div>
+                <div class="left-leg"></div>
+            </div>
+
+            <!-- Koala -->
+            <div class="boxK">
+                <div class="head-koala">
+                    <div class="head-koala-overlay"></div>
+                    <div class="earK-leftK">
+                        <div class="inner-earK"></div>
+                    </div>
+                    <div class="earK-rightK">
+                        <div class="inner-earK"></div>
+                    </div>
+                    <div class="eyeK-leftK">
+                        <div class="pupilK"></div>
+                    </div>
+                    <div class="eyeK-rightK">
+                        <div class="pupilK"></div>
+                    </div>
+                    <div class="blushK-leftK"></div>
+                    <div class="blushK-rightK"></div>
+                    <div class="noseK"></div>
+                    <div class="bodyK"></div>
+                    <div class="hand"></div>
+                    <div class="leg"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="grass back"></div>
+        <div class="grass-bg"></div>
+        <div class="grass front"></div>
+
+    </body>
+</html>
